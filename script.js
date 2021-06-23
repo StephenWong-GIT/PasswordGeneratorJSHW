@@ -7,7 +7,7 @@ var generateBtn = document.querySelector("#generate");
 const lowercases = "abcdefghijklmnopqrstuvwxyz";
 const uppercases = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 const numbers = "0123456789";
-const specialCharacters = "!@#$$%^&*()";
+const specialCharacters = "!@#$%^&*()";
 const generateButton = document.getElementById("#generateBtn");
 
 // Add event listener to generate button
