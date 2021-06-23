@@ -4,6 +4,9 @@ var generateBtn = document.querySelector("#generate");
 
 // Speical characters for the function
 
+const lowercases = "abcdefghijklmnopqrstuvwxyz";
+const uppercases = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+const numbers = "0123456789";
 const specialCharacters = "!@#$$%^&*()";
 const generateButton = document.getElementById("#generateBtn");
 
