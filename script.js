@@ -28,6 +28,11 @@ function writePassword() {
 function generatePassword() {
 
     var passwordLength = prompt("Please enter the number of characters you want to have no less than 8 no more thatn 128");
+    if (passwordLength < 8 || passwordLength > 128) {
+        alert("Invalid, Must be between 8 - 128 characters!");
+        return;
+    }
+
     var lowercases = confirm("Do you want lowercases in the password?");
     var uppercases = confirm("Do you want uppercases in the password?");
     var numbers = confirm("Do you want numbers in the password?");
@@ -45,13 +50,13 @@ function generatePassword() {
 
     var functionArray = {
         getLowerCases: function() {
-            return String.fromCharCode(Math.floor(Math.random() * 26 + 86));
+            return String.fromCharCode(Math.floor(Math.random() * 10 + 48));
         },
         getUpperCases: function() {
-            return String.fromCharCode(Math.floor(Math.random() * 26 + 35));
+            return String.fromCharCode(Math.floor(Math.random() * 26 + 97));
         },
         getNumbers: function() {
-            return String.fromCharCode(Math.floor(Math.random() * 10 + 72));
+            return String.fromCharCode(Math.floor(Math.random() * 26 + 65));
         },
         getSpecialCharacters: function() {
             return specialCharacters[Math.floor(Math.random() * specialCharacters.length)]
